@@ -4,7 +4,7 @@ This repository contains the source code for my personal resume, which is hosted
 
 ## Live Page
 
-[https://maurya-anand.github.io/cv/](https://maurya-anand.github.io/cv/)
+[https://maurya-anand.github.io](https://maurya-anand.github.io)
 
 ## Components
 

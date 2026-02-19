@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-end: #e2e8f0;
+  --surface-01: rgba(255, 255, 255, 0.94);
+  --surface-02: rgba(248, 250, 252, 0.92);
+  --highlights: #2563eb;
+  --text-strong: #0f172a;
+  --text-muted: #334155;
+  --heading-font: 'Space Grotesk', sans-serif;
+  --body-font: 'Inter', sans-serif;
+  --card-radius: 24px;
+  --section-gap: 72px;
+  --inner-gap: 32px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--body-font);
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.08), transparent 45%),
+    linear-gradient(160deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-muted);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--highlights);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 72px 28px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+header,
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--inner-gap);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  letter-spacing: 0.02em;
+  color: var(--text-strong);
+}
+
+h1 {
+  font-size: clamp(2.8rem, 4vw, 3.6rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+.centered-header {
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.card {
+  position: relative;
+  border-radius: var(--card-radius);
+  padding: 42px 48px;
+  background: linear-gradient(130deg, var(--surface-01), var(--surface-02));
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 24px 50px -40px rgba(15, 23, 42, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 36px 38px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 56px 18px 88px;
+    gap: 56px;
+  }
+
+  .card {
+    padding: 30px 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 44px 16px 68px;
+    gap: 48px;
+  }
+
+  .card {
+    padding: 28px 24px;
+    border-radius: 18px;
+  }
+}
+
+/* ── Print styles ── */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  html, body {
+    width: 100%;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #000 !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 18pt;
+  }
+
+  header, section {
+    gap: 10pt;
+  }
+
+  h1 {
+    font-size: 20pt !important;
+  }
+
+  h2 {
+    font-size: 13pt !important;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    font-size: 11pt !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  /* Show link URLs after anchor text */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 7.5pt;
+    font-weight: 400;
+    color: #555 !important;
+    word-break: break-all;
+  }
+
+  /* But not for mailto or icon-only links */
+  a[href^="mailto:"]::after {
+    content: none;
+  }
+
+  .section-container {
+    gap: 12pt;
+  }
+
+  .card {
+    border: 1px solid #ccc !important;
+    border-radius: 6pt;
+    padding: 14pt 16pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+}

@@ -1,0 +1,143 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-card.card {
+  padding: 28px 26px;
+}
+
+.project-card .project-title {
+  margin: 0;
+  color: var(--text-strong);
+  letter-spacing: 0.02em;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.technology-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--highlights);
+  font-size: 1.5rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  color: var(--text-strong);
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.project-link svg {
+  font-size: 1rem;
+}
+
+.project-link:hover {
+  color: var(--highlights);
+}
+
+
+@media (max-width: 960px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .project-card.card {
+    padding: 26px 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 10pt;
+  }
+
+  .project-card {
+    gap: 6pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .project-card.card {
+    padding: 10pt 12pt;
+  }
+
+  .project-description {
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+
+  .technology-icon-wrapper {
+    width: 28pt;
+    height: 28pt;
+    font-size: 12pt;
+    border-radius: 6pt;
+    border: 1px solid #ccc !important;
+  }
+
+  .project-links {
+    gap: 4pt;
+  }
+
+  .project-link {
+    padding: 3pt 8pt;
+    font-size: 8pt;
+    border-radius: 4pt;
+    border: none !important;
+  }
+
+  .project-link svg {
+    font-size: 8pt;
+  }
+
+  /* Show project link URLs */
+  .project-link::after {
+    content: none;
+  }
+}

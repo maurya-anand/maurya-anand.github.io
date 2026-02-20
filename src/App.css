@@ -23,6 +23,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-target {
+  scroll-margin-top: 100px;
+}
+
 body {
   min-height: 100vh;
   font-family: var(--body-font);

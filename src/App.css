@@ -52,7 +52,7 @@ a {
 .container {
   width: min(1100px, 100%);
   margin: 0 auto;
-  padding: 72px 28px 110px;
+  padding: 0px 28px 110px; /* Reduced top padding */
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);

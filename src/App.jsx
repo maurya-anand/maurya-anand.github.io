@@ -12,9 +12,11 @@ function App() {
   const [activeSection, setActiveSection] = useState("header");
 
   useEffect(() => {
+    const header = document.getElementById("header");
+
     const handleScroll = () => {
       // Navbar visibility
-      if (window.scrollY > 100) {
+      if (header && window.scrollY > header.offsetHeight) {
         setIsNavbarVisible(true);
       } else {
         setIsNavbarVisible(false);
@@ -39,9 +41,22 @@ function App() {
     };
   }, []);
 
+  const hideNavbar = () => {
+    setIsNavbarVisible(false);
+  };
+
+  const handleSetActiveSection = (section) => {
+    setActiveSection(section);
+  };
+
   return (
     <div className="container">
-      <Navbar isVisible={isNavbarVisible} activeSection={activeSection} />
+      <Navbar
+        isVisible={isNavbarVisible}
+        activeSection={activeSection}
+        hideNavbar={hideNavbar}
+        setActiveSection={handleSetActiveSection}
+      />
       <div id="header" className="scroll-target">
         <Header />
       </div>

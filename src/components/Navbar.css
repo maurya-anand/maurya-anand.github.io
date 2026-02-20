@@ -22,13 +22,13 @@
 
 .navbar.visible {
   opacity: 1;
-  max-height: 100px;
-  padding: 10px 20px;
+  max-height: 120px;
+  padding: 15px 20px;
   border-width: 1px;
 }
 
 .navbar a {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   color: var(--text-muted);
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -48,13 +48,14 @@
 
 @media (max-width: 768px) {
   .navbar {
+    gap: 0.2rem;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: center;
   }
 
   .navbar a {
-    font-size: 0.9rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
   }
 }
 

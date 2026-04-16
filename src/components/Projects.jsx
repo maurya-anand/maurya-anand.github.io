@@ -228,14 +228,16 @@ const Projects = () => (
                 <SiPypi /> PyPI
               </a>
             )}
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              <FaGithub /> Source
-            </a>
+            {project.repo && (
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <FaGithub /> Source
+              </a>
+            )}
           </div>
         </div>
       ))}

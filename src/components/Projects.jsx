@@ -32,6 +32,13 @@ import "./Projects.css";
 
 const projects = [
   {
+    name: "varsnap",
+    description:
+      "A web application to visualize human genetic variants on a gene’s protein domains and transcript structure.",
+    demo: "https://varsnap.onrender.com/",
+    technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
+  },
+  {
     name: "nf-rna-wasp-allele-count",
     description:
       "Genotype-aware RNA-seq pipeline using STAR+WASP for allele-specific read counting and variant allele fraction estimation.",
@@ -131,14 +138,6 @@ const projects = [
       "A command-line tool for retrieving annotations from the NCBI SRA database.",
     repo: "https://github.com/maurya-anand/sra-annotator",
     technologies: ["Python", "NCBIApi"],
-  },
-  {
-    name: "Covid19 tracker",
-    description:
-      "An interactive dashboard built using Django that uses the Disease.sh API to visualize the global Covid-19 case data in real-time.",
-    demo: "https://covidlive-8jvw.onrender.com/",
-    repo: "https://github.com/maurya-anand/covid19live",
-    technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
   },
   {
     name: "Multi-language dictionary",

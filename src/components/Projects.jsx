@@ -34,7 +34,7 @@ const projects = [
   {
     name: "varsnap",
     description:
-      "A web application to visualize human genetic variants on a gene’s protein domains and transcript structure.",
+      "A web application for visualization of human genetic variants in protein-domain and transcript context.",
     demo: "https://varsnap.onrender.com/",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
   },

@@ -3,6 +3,16 @@ import "./Timeline.css";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const timelineData = [
+    {
+    type: "work",
+    company: "Klinikum Oldenburg",
+    location: "Oldenburg, Germany",
+    title: "Bioinformatician",
+    period: "Apr 2026 - Current",
+    duties: [
+      "Provide bioinformatics support for clinical research projects at the University Institute for Medical Genetics.",
+    ],
+  },
   {
     type: "work",
     company: "Carl von Ossietzky University of Oldenburg",
@@ -10,8 +20,9 @@ const timelineData = [
     title: "Research Associate",
     period: "Aug 2025 - Current",
     duties: [
-      "Lead bioinformatics operations at CFGB (Core Facility Genomics and Bioinformatics), overseeing genomic data management and analysis workflows.",
-      "Provide bioinformatics support for clinical research projects at the University Institute for Medical Genetics.",
+      "Lead bioinformatics operations at CFGB, including multi-omics data analysis (WGS, WES, RNA-seq, and single-cell) using short-read and long-read sequencing platforms.",
+      "Develop in-house tools and pipelines for multi-omics data analysis.",
+      "Perform data management and maintain documentation of analyses and code to support collaborative research projects at CFGB.",
     ],
   },
   {

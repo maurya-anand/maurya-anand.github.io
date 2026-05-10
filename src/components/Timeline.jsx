@@ -3,16 +3,6 @@ import "./Timeline.css";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const timelineData = [
-    {
-    type: "work",
-    company: "Klinikum Oldenburg",
-    location: "Oldenburg, Germany",
-    title: "Bioinformatician",
-    period: "Apr 2026 - Current",
-    duties: [
-      "Provide bioinformatics support for clinical research projects at the University Institute for Medical Genetics.",
-    ],
-  },
   {
     type: "work",
     company: "Carl von Ossietzky University of Oldenburg",
@@ -20,9 +10,13 @@ const timelineData = [
     title: "Research Associate",
     period: "Aug 2025 - Current",
     duties: [
-      "Lead bioinformatics operations at CFGB, including multi-omics data analysis (WGS, WES, RNA-seq, and single-cell) using short-read and long-read sequencing platforms.",
-      "Develop in-house tools and pipelines for multi-omics data analysis.",
-      "Perform data management and maintain documentation of analyses and code to support collaborative research projects at CFGB.",
+      "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, RNA-seq, single-cell, Illumina, and Oxford Nanopore datasets.",
+      "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore)  such as allele-specific expression, ONT methylation profiling.",
+      "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
+      "Perform germline variant calling using DRAGEN and DeepVariant, and analyze bulk and single-cell RNA-seq datasets.",
+      "Support Klinikum Oldenburg clinical research projects involving germline variant calling, RNA-seq, and single-cell analysis.",
+      "Manage sequencing data storage and access control across projects on HPC infrastructure.",
+      "Maintain project-level documentation, including code documentation and methodology.",
     ],
   },
   {
@@ -62,8 +56,8 @@ const timelineData = [
       "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
       "Automated the in-house neo-epitope prioritization pipeline for somatic variants to enhance scalability and expedite project delivery.",
       "Created a web application for automatic prioritization and reporting of neo-epitopes.",
-      "Developed a web-based QC dashboard for NGS data analysis on in-house servers.",
-      "Delivered WES, WGS, RNA seq, and neo-epitope prediction projects to clinicians and clients for diagnostic purposes.",
+      "Built an internal QC dashboard for real-time monitoring of NGS pipeline runs across WES, WGS, and RNA-seq projects on on-premise servers.",
+      "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a clinical research team operating within a CAP-accredited, NABL-certified diagnostic environment.",
     ],
   },
   {

@@ -53,11 +53,11 @@ const timelineData = [
     title: "Bioinformatics Analyst",
     period: "Apr 2016 - Sept 2018",
     duties: [
-      "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
-      "Automated the in-house neo-epitope prioritization pipeline for somatic variants to enhance scalability and expedite project delivery.",
-      "Created a web application for automatic prioritization and reporting of neo-epitopes.",
-      "Built an internal QC dashboard for real-time monitoring of NGS pipeline runs across WES, WGS, and RNA-seq projects on on-premise servers.",
       "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a clinical research team operating within a CAP-accredited, NABL-certified diagnostic environment.",
+      "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
+      "Automated the in-house neoepitope prioritisation pipeline for somatic variants, integrating somatic variant calling, HLA typing, and ML-based immunogenicity scoring from tumor-normal DNA-seq and RNA-seq data.",
+      "Built a web application on top of the pipeline for automated neoepitope prioritisation, generating reports with ranked peptide candidates and their corresponding HLA allele predictions.",
+      "Built an internal QC dashboard for real-time monitoring of NGS pipeline runs across WES, WGS, and RNA-seq projects on on-premise servers.",
     ],
   },
   {

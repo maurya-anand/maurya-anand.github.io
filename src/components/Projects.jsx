@@ -2,6 +2,7 @@ import React from "react";
 import {
   FaGithub,
   FaExternalLinkAlt,
+  FaInfoCircle,
   FaPython,
   FaDocker,
   FaReact,
@@ -36,6 +37,7 @@ const projects = [
     description:
       "A web application for visualization of human genetic variants in protein-domain and transcript context.",
     demo: "https://varsnap.onrender.com/",
+    coldStartNote: "Hosted on Render free tier, it may take ~30s to wake up on first load.",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
   },
   {
@@ -139,20 +141,6 @@ const projects = [
     repo: "https://github.com/maurya-anand/sra-annotator",
     technologies: ["Python", "NCBIApi"],
   },
-  {
-    name: "Multi-language dictionary",
-    description: "A dictionary app using the 'dictionary API'.",
-    demo: "https://dictionary-aa43b.web.app/",
-    repo: "https://github.com/maurya-anand/react-dictionary",
-    technologies: ["ReactJS", "MUI", "SiAxios", "SiFirebase"],
-  },
-  {
-    name: "Netflix UI clone",
-    description: "Netflix-clone using themoviedb API.",
-    demo: "https://netflix-react-a5dbe.web.app/",
-    repo: "https://github.com/maurya-anand/netflix-react",
-    technologies: ["ReactJS", "SiAxios", "SiFirebase"],
-  },
 ];
 
 const technologyIcons = {
@@ -213,9 +201,11 @@ const Projects = () => (
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-link"
+                className={`project-link${project.coldStartNote ? " has-cold-start-tooltip" : ""}`}
+                data-tooltip={project.coldStartNote || undefined}
               >
                 <FaExternalLinkAlt /> Demo
+                {project.coldStartNote && <FaInfoCircle className="cold-start-icon" />}
               </a>
             )}
             {project.pypi && (

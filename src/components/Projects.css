@@ -75,6 +75,39 @@
   color: var(--highlights);
 }
 
+.cold-start-icon {
+  margin-left: 4px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.has-cold-start-tooltip {
+  position: relative;
+}
+
+.has-cold-start-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 40px));
+  background: rgba(30, 41, 59, 0.95);
+  color: #f1f5f9;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: normal;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+}
+
+.has-cold-start-tooltip:hover::after {
+  opacity: 1;
+}
+
 
 @media (max-width: 960px) {
   .projects-grid {

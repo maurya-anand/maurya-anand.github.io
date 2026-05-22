@@ -13,6 +13,7 @@ import {
   FaCodeBranch,
   FaGlobe,
   FaTerminal,
+  FaBoxOpen,
 } from "react-icons/fa";
 import {
   SiGnu,
@@ -91,7 +92,7 @@ const skillsData = [
   },
   {
     category: "Containerization & Package Management",
-    skills: ["Docker", "Mamba", "Pip"],
+    skills: ["Docker", "Apptainer", "Mamba", "Pip"],
     icon: <FaDatabase />,
   },
   {
@@ -144,6 +145,7 @@ const skillIcons = {
   Quarto: <PiNotebook />,
   Redmine: <SiRedmine />,
   Docker: <FaDocker />,
+  Apptainer: <FaBoxOpen />,
   Mamba: <SiAnaconda />,
   Pip: <SiPypi />,
   "GitHub Actions": <SiGithubactions />,

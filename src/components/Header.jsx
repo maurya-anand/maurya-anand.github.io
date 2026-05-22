@@ -14,14 +14,19 @@ const Header = () => (
       <h1 className="header-name">Anand Maurya</h1>
       <span className="header-title">Bioinformatics Scientist</span>
       <p className="header-summary">
-        Bioinformatics scientist with nearly a decade of experience building
-        scalable NGS pipelines and full-stack web applications for clinical
+        Bioinformatics Scientist with over a decade of experience designing,
+        building, and deploying production-grade NGS pipelines for clinical
         genomics and multi-omics research.
       </p>
       <p className="header-summary">
-        Specialized in analyzing both short-read (Illumina) and long-read
-        (PacBio HiFi, Oxford Nanopore) sequencing data, including whole-genome,
-        whole-exome, and RNA-seq, for research and diagnostic applications.
+        Specialized in analysing short-read (Illumina) and long-read (PacBio,
+        Nanopore) sequencing data (WGS, WES, RNA-seq, germline/somatic variant
+        calling).
+      </p>
+      <p className="header-summary">
+        Proficient in Nextflow/WDL, Python, Bash, Docker, and cloud/HPC,
+        alongside skills in full-stack web development (Django, React) for
+        research and clinical applications.
       </p>
     </div>
     <div className="header-contact">

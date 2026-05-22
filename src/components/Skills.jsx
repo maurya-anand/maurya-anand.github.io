@@ -14,6 +14,9 @@ import {
   FaGlobe,
   FaTerminal,
   FaBoxOpen,
+  FaLock,
+  FaBolt,
+  FaFlask,
 } from "react-icons/fa";
 import {
   SiGnu,
@@ -41,7 +44,7 @@ import {
   SiGooglecloud,
 } from "react-icons/si";
 import { PiBracketsCurlyBold, PiNotebook } from "react-icons/pi";
-import { GiDna1 } from "react-icons/gi";
+import { GiDna1, GiAtom } from "react-icons/gi";
 import { BiLineChart } from "react-icons/bi";
 import {
   TbTopologyComplex,
@@ -55,29 +58,15 @@ const skillsData = [
   {
     category: "Bioinformatics",
     skills: [
-      "Germline and somatic variant calling",
-      "NGS data analysis (WGS, WES, RNA-Seq)",
+      "Short-read (Illumina) & long-read (PacBio, ONT) data analysis (WGS, WES, RNA-seq)",
+      "Germline/Somatic Variant Calling",
       "Pipeline development and automation",
     ],
-    icon: <FaTools />,
-  },
-  {
-    category: "Web Development",
-    skills: [
-      "React",
-      "Django",
-      "Bootstrap",
-      "Django Rest Framework",
-      "Perl CGI",
-      "HighCharts",
-      "Plotly",
-      "jQuery",
-    ],
-    icon: <FaGlobe />,
+    icon: <GiAtom />,
   },
   {
     category: "Programming Languages",
-    skills: ["Python", "Perl", "Bash", "JavaScript", "R", "SQL"],
+    skills: ["Python", "R", "Bash", "JavaScript", "SQL", "Perl"],
     icon: <FaTerminal />,
   },
   {
@@ -86,44 +75,49 @@ const skillsData = [
     icon: <FaCogs />,
   },
   {
-    category: "Project Management & Documentation",
-    skills: ["GitHub Projects", "Redmine", "Confluence", "Markdown", "Quarto"],
-    icon: <FaProjectDiagram />,
-  },
-  {
     category: "Containerization & Package Management",
-    skills: ["Docker", "Apptainer", "Mamba", "Pip"],
-    icon: <FaDatabase />,
+    skills: ["Docker", "Apptainer", "Mamba", "Conda", "UV", "Pip"],
+    icon: <FaDocker />,
   },
   {
-    category: "CI/CD",
-    skills: ["GitHub Actions", "Jenkins"],
-    icon: <TbRocket />,
-  },
-  {
-    category: "Cluster Computing (HPC)",
-    skills: ["SLURM", "PBS"],
+    category: "Cloud, TRE & HPC Platforms",
+    skills: ["GCP", "Terra.bio", "Verily Workbench", "SLURM", "PBS"],
     icon: <FaServer />,
   },
   {
-    category: "Version Control",
-    skills: ["Git", "SVN"],
+    category: "Version Control & CI/CD",
+    skills: ["Git", "GitHub Actions", "Jenkins", "SVN"],
     icon: <FaCodeBranch />,
   },
   {
-    category: "Cloud Computing",
-    skills: ["Google Cloud Platform (GCP)"],
-    icon: <FaCloud />,
+    category: "Web Development",
+    skills: [
+      "React",
+      "Django",
+      "Django Rest Framework",
+      "D3.js",
+      "Plotly",
+      "HighCharts",
+      "Bootstrap",
+    ],
+    icon: <FaGlobe />,
+  },
+  {
+    category: "Project Management & Documentation",
+    skills: ["GitHub Projects", "Confluence", "Quarto", "Markdown", "Redmine"],
+    icon: <FaProjectDiagram />,
   },
 ];
 
 const skillIcons = {
-  "Germline and somatic variant calling": <GiDna1 />,
-  "NGS data analysis (WGS, WES, RNA-Seq)": <BiLineChart />,
-  "Pipeline development and automation": <FaCogs />,
+  "Short-read (Illumina) & long-read (PacBio, ONT) data analysis (WGS, WES, RNA-seq)": <GiDna1 />,
+  "Germline/Somatic Variant Calling": <BiLineChart />,
+  "Pipeline development and automation": <TbRocket />,
+
   Make: <SiGnu />,
   Nextflow: <TbTopologyComplex />,
   WDL: <PiBracketsCurlyBold />,
+
   Bootstrap: <SiBootstrap />,
   "D3.js": <SiD3Dotjs />,
   Django: <SiDjango />,
@@ -133,28 +127,38 @@ const skillIcons = {
   "Perl CGI": <SiPerl />,
   Plotly: <SiPlotly />,
   React: <FaReact />,
+
   Bash: <SiGnubash />,
   JavaScript: <SiJavascript />,
   Perl: <SiPerl />,
   Python: <FaPython />,
   R: <SiR />,
   SQL: <SiMysql />,
+
   Confluence: <SiConfluence />,
   "GitHub Projects": <SiGithub />,
   Markdown: <SiMarkdown />,
   Quarto: <PiNotebook />,
   Redmine: <SiRedmine />,
+
   Docker: <FaDocker />,
   Apptainer: <FaBoxOpen />,
   Mamba: <SiAnaconda />,
+  Conda: <SiAnaconda />,
+  UV: <FaBolt />,
   Pip: <SiPypi />,
-  "GitHub Actions": <SiGithubactions />,
-  Jenkins: <SiJenkins />,
+
+  GCP: <SiGooglecloud />,
+  "Terra.bio": <FaGlobe />,
+  "Verily Workbench": <FaFlask />,
+  TRE: <FaLock />,
   PBS: <TbServerBolt />,
   SLURM: <TbTopologyStar />,
+
   Git: <SiGit />,
   SVN: <SiSubversion />,
-  "Google Cloud Platform (GCP)": <SiGooglecloud />,
+  "GitHub Actions": <SiGithubactions />,
+  Jenkins: <SiJenkins />,
 };
 
 const Skills = () => (

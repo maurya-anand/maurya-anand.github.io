@@ -33,10 +33,10 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "varsnap",
+    name: "SnapVar",
     description:
       "A web application for visualization of human genetic variants in protein domain and transcript context.",
-    demo: "https://varsnap.onrender.com/",
+    demo: "https://snapvar.onrender.com",
     coldStartNote:
       "Hosted on Render free tier, it may take ~30s to wake up on first load.",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],

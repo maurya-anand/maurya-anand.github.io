@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaTools,
   FaProjectDiagram,
@@ -9,7 +8,6 @@ import {
   FaPython,
   FaDocker,
   FaReact,
-  FaCogs,
   FaCodeBranch,
   FaGlobe,
   FaTerminal,
@@ -33,7 +31,7 @@ import {
   FaNetworkWired,
   FaRocket,
 } from "react-icons/fa";
-import { GiDna1, GiAtom } from "react-icons/gi";
+import { GiDna1 } from "react-icons/gi";
 import "./Skills.css";
 
 const skillsData = [
@@ -44,32 +42,26 @@ const skillsData = [
       "Pipeline development and automation",
       "Germline/Somatic Variant Calling",
     ],
-    icon: <GiAtom />,
   },
   {
     category: "Programming Languages",
     skills: ["Python", "R", "Bash", "JavaScript", "SQL", "Perl"],
-    icon: <FaTerminal />,
   },
   {
     category: "Workflow Management",
     skills: ["Nextflow", "WDL", "Make"],
-    icon: <FaCogs />,
   },
   {
     category: "Containerization & Package Management",
     skills: ["Docker", "Apptainer", "Mamba", "Conda", "UV", "Pip"],
-    icon: <FaDocker />,
   },
   {
     category: "Cloud, TRE & HPC Platforms",
     skills: ["GCP", "Terra.bio", "Verily Workbench", "SLURM", "PBS"],
-    icon: <FaServer />,
   },
   {
     category: "Version Control & CI/CD",
     skills: ["Git", "GitHub Actions", "Jenkins", "SVN"],
-    icon: <FaCodeBranch />,
   },
   {
     category: "Web Development",
@@ -82,12 +74,10 @@ const skillsData = [
       "HighCharts",
       "Bootstrap",
     ],
-    icon: <FaGlobe />,
   },
   {
     category: "Project Management & Documentation",
     skills: ["GitHub Projects", "Confluence", "Quarto", "Markdown", "Redmine"],
-    icon: <FaProjectDiagram />,
   },
 ];
 
@@ -149,7 +139,6 @@ const Skills = () => (
       {skillsData.map((category, index) => (
         <div key={index} className="skill-category card">
           <div className="category-header">
-            <div className="category-icon">{category.icon}</div>
             <h3>{category.category}</h3>
           </div>
           <div className="skills-tags">

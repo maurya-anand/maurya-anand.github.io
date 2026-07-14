@@ -44,7 +44,7 @@ const timelineData = [
     ],
   },
   {
-    type: "education",
+    type: "work",
     company: "Adam Mickiewicz University",
     location: "Poznan, Poland",
     title: "Research Scholar",

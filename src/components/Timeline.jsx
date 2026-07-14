@@ -14,9 +14,21 @@ const timelineData = [
       "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore)  such as allele-specific expression, ONT methylation profiling.",
       "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
       "Perform germline variant calling using DRAGEN and DeepVariant, and analyze bulk and single-cell RNA-seq datasets.",
-      "Support Klinikum Oldenburg clinical research projects involving germline variant calling, RNA-seq, and single-cell analysis.",
       "Manage sequencing data storage and access control across projects on HPC infrastructure.",
       "Maintain project-level documentation, including code documentation and methodology.",
+    ],
+  },
+  {
+    type: "work",
+    company: "Klinikum Oldenburg",
+    location: "Oldenburg, Germany",
+    title: "Bioinformatician",
+    partTime: true,
+    period: "Aug 2025 - Current",
+    duties: [
+      "Collaborate with clinical researchers on the analysis of genomic and other clinical research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
+      "Deploy and maintain the in-house clinical genomics platform, enabling clinicians to perform variant analysis and prioritisation.",
+      "Ensure compliance with data-protection (GDPR), access-control, and documentation requirements across the hospital's clinical governance framework and the university's research environment.",
     ],
   },
   {
@@ -136,6 +148,9 @@ const Timeline = () => {
                   <h3 className="timeline-title">{item.title}</h3>
                   <p className="timeline-subtitle">
                     {item.company} · {item.location}
+                    {item.partTime && (
+                      <span className="timeline-parttime"> · Part-time</span>
+                    )}
                   </p>
                 </div>
                 {item.duties.length > 0 && (

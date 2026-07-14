@@ -41,8 +41,8 @@ const skillsData = [
     category: "Bioinformatics",
     skills: [
       "Short-read (Illumina) & long-read (PacBio, ONT) data analysis (WGS, WES, RNA-seq)",
-      "Germline/Somatic Variant Calling",
       "Pipeline development and automation",
+      "Germline/Somatic Variant Calling",
     ],
     icon: <GiAtom />,
   },

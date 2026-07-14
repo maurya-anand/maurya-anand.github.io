@@ -1,15 +1,11 @@
 .navbar {
   position: sticky;
-  top: 20px;
+  top: 0;
   width: 100%;
   padding: 0 20px;
-  border-radius: var(--card-radius);
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.5), rgba(248, 250, 252, 0.4));
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
-  border-width: 0;
-  backdrop-filter: blur(22px);
-  box-shadow: 0 24px 50px -40px rgba(15, 23, 42, 0.2);
+  background: var(--paper);
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -17,33 +13,33 @@
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out, padding 0.3s ease-in-out, border-width 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out, max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
 
 .navbar.visible {
   opacity: 1;
   max-height: 120px;
-  padding: 15px 20px;
-  border-width: 1px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar a {
-  font-family: var(--heading-font);
-  color: var(--text-muted);
+  font-family: var(--font);
+  color: var(--ink-muted);
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;
+  padding: 0.4rem 0.9rem;
+  transition: color 0.2s;
   font-weight: 500;
 }
 
 .navbar a:hover {
-  color: var(--text-strong);
+  color: var(--ink);
+  text-decoration: none;
 }
 
 .navbar a.active {
-  background-color: rgba(37, 99, 235, 0.1);
-  color: var(--highlights);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

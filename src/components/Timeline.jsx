@@ -1,4 +1,3 @@
-import React from "react";
 import "./Timeline.css";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
@@ -129,30 +128,26 @@ const Timeline = () => {
   return (
     <section className="section-container">
       <h2 className="centered-header">Career Timeline</h2>
-      <div className="timeline-container">
+      <div className="timeline-list">
         {sortedTimeline.map((item, index) => {
           const isWork = item.type === "work";
           return (
-            <article key={index} className="timeline-entry">
-              <div className="timeline-node">
-                <span className="timeline-marker">
+            <article key={index} className="timeline-row">
+              <div className="timeline-meta">
+                <span className="timeline-period">{item.period}</span>
+                <span className="timeline-type">
                   {isWork ? <FaBriefcase /> : <FaGraduationCap />}
+                  {isWork ? "Work" : "Education"}
                 </span>
-                {index !== sortedTimeline.length - 1 && (
-                  <span className="timeline-connector" />
-                )}
               </div>
-              <div className="timeline-card card">
-                <div className="timeline-card-header">
-                  <span className="timeline-period">{item.period}</span>
-                  <h3 className="timeline-title">{item.title}</h3>
-                  <p className="timeline-subtitle">
-                    {item.company} · {item.location}
-                    {item.partTime && (
-                      <span className="timeline-parttime"> · Part-time</span>
-                    )}
-                  </p>
-                </div>
+              <div className="timeline-content">
+                <h3 className="timeline-title">{item.title}</h3>
+                <p className="timeline-subtitle">
+                  {item.company} · {item.location}
+                  {item.partTime && (
+                    <span className="timeline-parttime"> · Part-time</span>
+                  )}
+                </p>
                 {item.duties.length > 0 && (
                   <ul className="duty-list">
                     {item.duties.map((duty, idx) => (

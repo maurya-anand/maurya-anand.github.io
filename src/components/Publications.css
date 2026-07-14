@@ -1,66 +1,62 @@
 .publications-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 26px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .publication-item {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 26px 28px;
+  gap: 10px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+.publication-item:first-child {
+  padding-top: 0;
+  border-top: none;
 }
 
 .publication-title {
   margin: 0;
-  color: var(--text-strong);
-  font-size: 1.08rem;
-  letter-spacing: 0.02em;
+  color: var(--ink);
+  font-size: 1.05rem;
 }
 
 .publication-item a:hover .publication-title {
-  color: var(--highlights);
+  color: var(--accent);
 }
 
 .publication-authors {
   font-style: italic;
-  color: var(--text-muted);
+  color: var(--ink-muted);
   font-size: 0.9rem;
 }
 
 .publication-journal-badge {
   display: block;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--highlights);
+  color: var(--ink-muted);
   font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.07em;
-}
-
-@media (max-width: 640px) {
-  .publications-list {
-    grid-template-columns: 1fr;
-  }
-
-  .publication-item {
-    padding: 24px;
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 @media print {
   .publications-list {
-    grid-template-columns: 1fr;
     gap: 10pt;
   }
 
   .publication-item {
-    padding: 10pt 12pt;
+    padding: 8pt 0;
+    border-top: 1px solid #ccc !important;
     break-inside: avoid;
     page-break-inside: avoid;
     gap: 4pt;
+  }
+
+  .publication-item:first-child {
+    padding-top: 0;
+    border-top: none !important;
   }
 
   .publication-authors {
@@ -69,10 +65,6 @@
 
   .publication-journal-badge {
     font-size: 8pt;
-    padding: 1pt 8pt;
-    border: 1px solid #aaa !important;
-    display: inline-block;
-    width: fit-content;
   }
 
   /* Don't duplicate URL after these links since the URL is the visible text */

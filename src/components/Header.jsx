@@ -15,8 +15,8 @@ const Header = () => (
       <span className="header-title">Bioinformatics Scientist</span>
       <p className="header-summary">
         Bioinformatics Scientist with over a decade of experience designing,
-        building, and deploying production-grade NGS pipelines for clinical
-        genomics and multi-omics research.
+        building, and deploying production-grade NGS workflows and clinical
+        genomics platforms for multi-omics research.
       </p>
       <p className="header-summary">
         Specialized in analysing short-read (Illumina) and long-read (PacBio,

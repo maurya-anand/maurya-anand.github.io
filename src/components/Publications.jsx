@@ -53,6 +53,7 @@ const publications = [
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a230",
+    webpage: "https://www.proquest.com/docview/2232428941",
   },
   {
     title:
@@ -62,6 +63,7 @@ const publications = [
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a236",
+    webpage: "https://www.proquest.com/docview/2232427756",
   },
   {
     title:
@@ -71,6 +73,7 @@ const publications = [
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a208",
+    webpage: "https://www.proquest.com/docview/2232461652",
   },
   {
     title:
@@ -79,6 +82,7 @@ const publications = [
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a209",
+    webpage: "https://www.proquest.com/docview/2232427878",
   },
 ];
 
@@ -89,7 +93,7 @@ const Publications = () => (
       {publications.map((pub, index) => (
         <div key={index} className="publication-item card">
           <span className="publication-journal-badge">{pub.journal}, {pub.year}</span>
-          <a href={pub.doi} target="_blank" rel="noopener noreferrer"><h3 className="publication-title">{pub.title} <FaExternalLinkAlt size={12}/></h3></a>
+          <a href={pub.webpage? pub.webpage : pub.doi} target="_blank" rel="noopener noreferrer"><h3 className="publication-title">{pub.title} <FaExternalLinkAlt size={12}/></h3></a>
           <p className="publication-authors">
             {pub.authors}
           </p>

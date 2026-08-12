@@ -85,7 +85,23 @@
   }
 
   .header-contact {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .contact-item {
+    gap: 8px;
+    padding: 6px 0;
+  }
+
+  .contact-icon {
+    font-size: 0.95rem;
+  }
+
+  .contact-item a,
+  .contact-item span {
+    font-size: 0.82rem;
   }
 }
 

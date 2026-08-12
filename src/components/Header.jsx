@@ -5,6 +5,7 @@ import {
   FaOrcid,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
 import "./Header.css";
 
 const Header = () => (
@@ -31,7 +32,13 @@ const Header = () => (
     <div className="header-contact">
       <div className="contact-item">
         <FaEnvelope className="contact-icon" />
-        <a href="mailto:anandmaurya@hotmail.com">anandmaurya@hotmail.com</a>
+        <a
+          href="mailto:anandmaurya@hotmail.com"
+          className="has-tooltip"
+          data-tooltip="Email"
+        >
+          anandmaurya@hotmail.com
+        </a>
       </div>
       <div className="contact-item">
         <FaLinkedin className="contact-icon" />
@@ -39,6 +46,8 @@ const Header = () => (
           href="https://www.linkedin.com/in/anand-maurya-"
           target="_blank"
           rel="noopener noreferrer"
+          className="has-tooltip"
+          data-tooltip="LinkedIn"
         >
           anand-maurya-
         </a>
@@ -50,6 +59,8 @@ const Header = () => (
             href="https://github.com/maurya-anand"
             target="_blank"
             rel="noopener noreferrer"
+            className="has-tooltip"
+            data-tooltip="GitHub"
           >
             maurya-anand
           </a>
@@ -58,6 +69,8 @@ const Header = () => (
             href="https://github.com/anand-imcm"
             target="_blank"
             rel="noopener noreferrer"
+            className="has-tooltip"
+            data-tooltip="GitHub"
           >
             anand-imcm
           </a>
@@ -69,8 +82,22 @@ const Header = () => (
           href="https://orcid.org/0000-0002-6204-2164"
           target="_blank"
           rel="noopener noreferrer"
+          className="has-tooltip"
+          data-tooltip="ORCID"
         >
           orcid.org/0000-0002-6204-2164
+        </a>
+      </div>
+      <div className="contact-item">
+        <SiGooglescholar className="contact-icon" />
+        <a
+          href="https://scholar.google.com/citations?hl=en&user=mZBdRukAAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="has-tooltip"
+          data-tooltip="Google Scholar"
+        >
+          scholar.google.com
         </a>
       </div>
       <div className="contact-item">

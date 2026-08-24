@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 :root {
-  --paper: #fafaf8;
-  --ink: #191b1f;
-  --ink-muted: #4b4e55;
-  --accent: #2f5d8a;
-  --border: rgba(25, 27, 31, 0.14);
-  --font: 'Alegreya Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --paper: #ffffff;
+  --ink: rgba(0, 0, 0, 0.87);
+  --ink-muted: rgba(0, 0, 0, 0.54);
+  --accent: #3f51b5;
+  --border: rgba(0, 0, 0, 0.12);
+  --font: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --section-gap: 64px;
   --inner-gap: 28px;
 }
@@ -20,7 +20,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -40,7 +40,7 @@ body {
 a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 a:hover {
@@ -72,17 +72,18 @@ h6 {
   font-family: var(--font);
   color: var(--ink);
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: clamp(2.2rem, 3.4vw, 2.75rem);
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.15;
 }
 
 h2 {
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 1.5625rem;
+  font-weight: 300;
   text-align: left;
   color: var(--ink);
   padding-bottom: 10px;
@@ -90,7 +91,8 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .centered-header {

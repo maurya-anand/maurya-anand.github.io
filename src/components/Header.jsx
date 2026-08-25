@@ -14,19 +14,57 @@ const Header = () => (
       <h1 className="header-name">Anand Maurya</h1>
       <span className="header-title">Bioinformatics Scientist</span>
       <p className="header-summary">
-        Bioinformatics Scientist with over a decade of experience designing,
-        building, and deploying production-grade NGS workflows and clinical
-        genomics platforms for multi-omics research.
+        I work at the{" "}
+        <a
+          href="https://uol.de/anand-maurya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          University of Oldenburg
+        </a>
+        's Core Facility Genomics and Bioinformatics, where I lead
+        bioinformatics operations, including building and
+        maintaining pipelines for long-read and short-read NGS data. I also
+        work as a bioinformatician at{" "}
+        <a
+          href="https://www.klinikum-oldenburg.de/genetik"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Klinikum Oldenburg
+        </a>
+        's University Institute of Medical Genetics, where I contribute to
+        the development and maintenance of the
+        clinical genomics platform used in clinical variant interpretation.
       </p>
       <p className="header-summary">
-        Specialized in analysing short-read (Illumina) and long-read (PacBio,
-        Nanopore) sequencing data (WGS, WES, RNA-seq, germline/somatic variant
-        calling).
+        Before Oldenburg, I was at the{" "}
+        <a
+          href="https://www.imcm.ox.ac.uk/about/team/anand-maurya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          University of Oxford
+        </a>
+        's Oxford-GSK Institute for Molecular and Computational Medicine. I
+        led pipeline development for the group's cloud-based research
+        platform. The work covered
+        long-read variant calling, proteomic machine learning workflows, and
+        clinical-grade whole-genome analysis, in support of neurodegenerative
+        disease research.
       </p>
       <p className="header-summary">
-        Proficient in Nextflow/WDL, Python, Bash, Docker, and cloud/HPC,
-        alongside skills in full-stack web development (Django, React) for
-        research and clinical applications.
+        As a Research Scholar at Adam Mickiewicz University in Poznań, my research
+        was on non-coding RNAs. I built a pipeline for automated exploration
+        of NCBI Sequence Read Archive datasets using nucleotide sequences as
+        queries. I also built full-stack web applications for exploring
+        snoRNA and tRNA expression data.
+      </p>
+      <p className="header-summary">
+        Earlier, in Bangalore, India, I worked in clinical cancer genomics
+        diagnostics. I built the variant annotation and neoepitope
+        prioritization pipelines used across the lab's clinical reporting
+        workflow.
       </p>
     </div>
     <div className="header-contact">

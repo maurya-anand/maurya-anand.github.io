@@ -49,8 +49,8 @@ const Header = () => (
       </p>
       <p className="header-summary">
         As a Research Scholar at Adam Mickiewicz University in Poznań, my research
-        was on non-coding RNAs. I built a pipeline for automated exploration
-        of NCBI Sequence Read Archive datasets using nucleotide sequences as
+        was on non-coding RNAs. I developed a method to automatically
+        explore NCBI SRA sequencing data using nucleotide sequences as
         queries. I also built full-stack web applications for exploring
         snoRNA and tRNA expression data.
       </p>

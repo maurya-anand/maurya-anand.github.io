@@ -10,7 +10,7 @@ const timelineData = [
     period: "Aug 2025 - Current",
     duties: [
       "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, RNA-seq, and single-cell assays on Illumina and Oxford Nanopore platforms.",
-      "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific read counts and VAF estimation, and haplotype-resolved methylation profiling.",
+      "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific read counts with VAF estimation, and haplotype-resolved methylation profiling.",
       "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
       "Perform germline variant calling using DRAGEN and DeepVariant, and analyse bulk and single-cell RNA-seq datasets.",
       "Manage sequencing data storage and access control across projects on HPC infrastructure.",
@@ -25,7 +25,7 @@ const timelineData = [
     partTime: true,
     period: "Aug 2025 - Current",
     duties: [
-      "Collaborate with clinical researchers on the analysis of genomic and other clinical research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
+      "Collaborate with clinical researchers on the analysis of genomic and other research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
       "Deploy and maintain the in-house clinical genomics platform, enabling clinicians to perform variant analysis and prioritisation.",
       "Ensure compliance with data-protection (GDPR), access-control, and documentation requirements across the hospital's clinical governance framework and the university's research environment.",
     ],
@@ -40,7 +40,7 @@ const timelineData = [
       "Designed and implemented workflows for the research group's Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud. This included a WDL-based workflow for variant calling and annotation using PacBio HiFi long-read sequencing data, and a machine learning workflow for biomarker discovery.",
       "Led the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
       "Provided bioinformatics support to IMCM research teams, devising new analysis strategies and working closely with the bioinformatics core group.",
-      "Maintained extensive documentation of all analyses and code within the IMCM data platform.",
+      "Maintained extensive documentation of all analyses and code within IMCM's internal data platform.",
     ],
   },
   {
@@ -64,7 +64,7 @@ const timelineData = [
     title: "Bioinformatics Analyst",
     period: "Apr 2016 - Sept 2018",
     duties: [
-      "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a clinical research team operating within a CAP-accredited, NABL-certified diagnostic environment.",
+      "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a research team operating within a CAP-accredited, NABL-certified diagnostic environment.",
       "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
       "Automated the in-house neo-epitope prioritisation pipeline for somatic variants, integrating somatic variant calling, HLA typing, and ML-based immunogenicity scoring from tumor-normal DNA-seq and RNA-seq data.",
       "Built a web application on top of the pipeline for automated neo-epitope prioritisation, generating reports with ranked peptide candidates and their corresponding HLA allele predictions.",

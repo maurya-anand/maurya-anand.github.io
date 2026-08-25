@@ -112,5 +112,6 @@
 
   .skill-icon {
     font-size: 9pt;
+    color: #000 !important;
   }
 }

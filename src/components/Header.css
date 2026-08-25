@@ -72,7 +72,7 @@
   color: var(--ink-muted);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .header-contact {
     gap: 8px 16px;
   }
@@ -100,6 +100,7 @@
     font-size: 9pt;
     letter-spacing: 0.15em;
     padding-bottom: 6pt;
+    color: #000 !important;
   }
 
   .header-summary {
@@ -117,6 +118,7 @@
 
   .contact-icon {
     font-size: 9pt;
+    color: #000 !important;
   }
 
   .contact-item a,

@@ -10,7 +10,7 @@ const timelineData = [
     period: "Aug 2025 - Current",
     duties: [
       "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, RNA-seq, and single-cell assays on Illumina and Oxford Nanopore platforms.",
-      "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific expression and ONT methylation profiling workflows.",
+      "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific read counts and VAF estimation, and haplotype-resolved methylation profiling.",
       "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
       "Perform germline variant calling using DRAGEN and DeepVariant, and analyse bulk and single-cell RNA-seq datasets.",
       "Manage sequencing data storage and access control across projects on HPC infrastructure.",
@@ -37,7 +37,7 @@ const timelineData = [
     title: "Bioinformatician",
     period: "Jan 2023 - Aug 2025",
     duties: [
-      "Designed and implemented workflows for the research group's Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud. This included a WDL-based workflow for variant calling and annotation using PacBio long-read sequencing data, and a machine learning workflow for proteomic data.",
+      "Designed and implemented workflows for the research group's Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud. This included a WDL-based workflow for variant calling and annotation using PacBio HiFi long-read sequencing data, and a machine learning workflow for biomarker discovery.",
       "Led the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
       "Provided bioinformatics support to IMCM research teams, devising new analysis strategies and working closely with the bioinformatics core group.",
       "Maintained extensive documentation of all analyses and code within the IMCM data platform.",

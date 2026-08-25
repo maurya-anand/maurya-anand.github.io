@@ -8,7 +8,7 @@ const Header = () => (
       <h1 className="header-name">Anand Maurya</h1>
       <span className="header-title">Bioinformatics Scientist</span>
       <p className="header-summary">
-        I work at the{" "}
+        I've spent over a decade in bioinformatics. I work at the{" "}
         <a
           href="https://uol.de/anand-maurya"
           target="_blank"
@@ -55,10 +55,15 @@ const Header = () => (
         snoRNA and tRNA expression data.
       </p>
       <p className="header-summary">
-        Earlier, in Bangalore, India, I worked in clinical cancer genomics
-        diagnostics. I built the variant annotation and neoepitope
-        prioritization pipelines used across the lab's clinical reporting
-        workflow.
+        Earlier, I started my career at Genotypic Technology in India,
+        analyzing clinical whole-exome sequencing data for genetic disease
+        diagnosis. I then moved to MedGenome Labs, a CAP-accredited
+        diagnostics lab, where I worked with external clients on research
+        projects, and with clinicians and genome analysts on clinical
+        variant interpretation. I developed the lab's in-house variant
+        annotation database, automated its ML-based immunogenic peptide
+        prioritization pipeline, and carried out routine clinical data
+        analysis.
       </p>
     </div>
     <div className="header-contact">

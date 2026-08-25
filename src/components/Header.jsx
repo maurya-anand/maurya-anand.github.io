@@ -29,7 +29,7 @@ const Header = () => (
         </a>
         's University Institute of Medical Genetics, where I contribute to
         the development and maintenance of the
-        clinical genomics platform used in clinical variant interpretation.
+        clinical genomics platform used for variant interpretation.
       </p>
       <p className="header-summary">
         Before Oldenburg, I was at the{" "}
@@ -43,14 +43,14 @@ const Header = () => (
         's Oxford-GSK Institute for Molecular and Computational Medicine. I
         led pipeline development for the group's cloud-based research
         platform. The work covered
-        long-read variant calling, proteomic machine learning workflows, and
-        clinical-grade whole-genome analysis, in support of neurodegenerative
-        disease research.
+        long-read variant calling, a machine learning workflow for biomarker
+        discovery, and whole-genome variant analysis, supporting various
+        ongoing research projects in neurodegenerative disorders.
       </p>
       <p className="header-summary">
         As a Research Scholar at Adam Mickiewicz University in Poznań, my research
         was on non-coding RNAs. I developed a method to automatically
-        explore NCBI SRA sequencing data using nucleotide sequences as
+        explore sequencing data in NCBI SRA using nucleotide sequences as
         queries. I also built full-stack web applications for exploring
         snoRNA and tRNA expression data.
       </p>

@@ -34,7 +34,7 @@ const projects = [
     technologies: ["Python", "Django", "JavaScript", "Bootstrap", "Render"],
   },
   {
-    name: "proteomics-ML-workflow",
+    name: "BiomarkerML",
     description:
       "A cloud-based proteomics machine learning workflow using deep learning and classical ML models for biomarker discovery.",
     demo: "https://dockstore.org/workflows/github.com/anand-imcm/proteomics-ML-workflow",

@@ -12,11 +12,9 @@ function App() {
   const [activeSection, setActiveSection] = useState("header");
 
   useEffect(() => {
-    const header = document.getElementById("header");
-
     const handleScroll = () => {
       // Navbar visibility
-      if (header && window.scrollY > header.offsetHeight) {
+      if (window.scrollY > window.innerHeight) {
         setIsNavbarVisible(true);
       } else {
         setIsNavbarVisible(false);

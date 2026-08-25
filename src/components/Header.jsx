@@ -1,10 +1,4 @@
-import {
-  FaEnvelope,
-  FaLinkedin,
-  FaGithub,
-  FaOrcid,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaOrcid } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import "./Header.css";
 
@@ -137,10 +131,6 @@ const Header = () => (
         >
           scholar.google.com
         </a>
-      </div>
-      <div className="contact-item">
-        <FaMapMarkerAlt className="contact-icon" />
-        <span>Oldenburg, Germany</span>
       </div>
     </div>
   </header>

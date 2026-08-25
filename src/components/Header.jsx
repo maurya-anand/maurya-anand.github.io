@@ -56,13 +56,13 @@ const Header = () => (
       </p>
       <p className="header-summary">
         Earlier, I started my career at Genotypic Technology in India,
-        analyzing clinical whole-exome sequencing data for genetic disease
-        diagnosis. I then moved to MedGenome Labs, a CAP-accredited
+        analysing clinical whole-exome sequencing data for genetic disease
+        diagnosis. I then moved to MedGenome Labs Ltd., a CAP-accredited
         diagnostics lab, where I worked with external clients on research
         projects, and with clinicians and genome analysts on clinical
         variant interpretation. I developed the lab's in-house variant
-        annotation database, automated its ML-based immunogenic peptide
-        prioritization pipeline, and carried out routine clinical data
+        annotation database, automated its ML-based neo-epitope
+        prioritisation pipeline, and carried out routine clinical data
         analysis.
       </p>
     </div>

@@ -27,7 +27,7 @@ const projects = [
   {
     name: "SnapVar",
     description:
-      "A web application for visualization of human genetic variants in protein domain and transcript context.",
+      "A web application for visualisation of human genetic variants in protein domain and transcript context.",
     demo: "https://snapvar.onrender.com",
     coldStartNote:
       "Demo: Hosted on Render free tier, it may take ~30s to wake up on first load.",
@@ -88,7 +88,7 @@ const projects = [
   {
     name: "pb-variant-call",
     description:
-      "A WDL-based workflow for variant calling and annotation using PacBio HiFi long-read sequencing data, optimized for execution on the Terra.bio cloud platform.",
+      "A WDL-based workflow for variant calling and annotation using PacBio HiFi long-read sequencing data, optimised for execution on the Terra.bio cloud platform.",
     demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
     repo: "https://github.com/anand-imcm/pb-variant-call",
     technologies: [

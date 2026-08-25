@@ -52,7 +52,7 @@ const skillsData = [
     skills: ["Nextflow", "WDL", "Make"],
   },
   {
-    category: "Containerization & Package Management",
+    category: "Containerisation & Package Management",
     skills: ["Docker", "Apptainer", "Mamba", "Conda", "UV", "Pip"],
   },
   {

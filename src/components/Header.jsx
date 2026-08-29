@@ -74,7 +74,7 @@ const Header = () => (
           className="has-tooltip"
           data-tooltip="Email"
         >
-          anandmaurya@hotmail.com
+          Email
         </a>
       </div>
       <div className="contact-item">
@@ -134,7 +134,7 @@ const Header = () => (
           className="has-tooltip"
           data-tooltip="Google Scholar"
         >
-          scholar.google.com
+          Google scholar
         </a>
       </div>
     </div>

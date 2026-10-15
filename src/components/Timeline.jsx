@@ -23,7 +23,7 @@ const timelineData = [
     location: "Oldenburg, Germany",
     title: "Bioinformatician",
     partTime: true,
-    period: "Aug 2025 - Current",
+    period: "Apr 2026 - Current",
     duties: [
       "Collaborate with clinical researchers on the analysis of genomic and other research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
       "Deploy and maintain the in-house clinical genomics platform, enabling clinicians to perform variant analysis and prioritisation.",

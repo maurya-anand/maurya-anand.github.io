@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     type: "work",
-    company: "Klinikum Oldenburg",
+    company: "Klinikum Oldenburg, University Institute of Medical Genetics",
     location: "Oldenburg, Germany",
     title: "Bioinformatician",
     partTime: true,
@@ -123,6 +123,10 @@ const sortedTimeline = [...timelineData].sort((a, b) => {
 
   if (bDetails.endYear !== aDetails.endYear) {
     return bDetails.endYear - aDetails.endYear;
+  }
+
+  if (Boolean(a.partTime) !== Boolean(b.partTime)) {
+    return a.partTime ? 1 : -1;
   }
 
   return bDetails.startYear - aDetails.startYear;

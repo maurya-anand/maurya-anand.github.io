@@ -9,12 +9,12 @@ const timelineData = [
     title: "Research Associate",
     period: "Aug 2025 - Current",
     duties: [
-      "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, RNA-seq, and single-cell assays on Illumina and Oxford Nanopore platforms.",
+      "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, and RNA-seq assays on Illumina and Oxford Nanopore platforms.",
       "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific read counts with VAF estimation, and haplotype-resolved methylation profiling.",
       "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
-      "Perform germline variant calling using DRAGEN and DeepVariant, and analyse bulk and single-cell RNA-seq datasets.",
+      "Perform germline variant calling using DRAGEN and DeepVariant, and analyse RNA-seq datasets.",
       "Manage sequencing data storage and access control across projects on HPC infrastructure.",
-      "Maintain project-level documentation, including code documentation and methodology.",
+      "Maintain project-level documentation covering code and methodology.",
     ],
   },
   {
@@ -27,7 +27,7 @@ const timelineData = [
     duties: [
       "Collaborate with clinical researchers on the analysis of genomic and other research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
       "Deploy and maintain the in-house clinical genomics platform, enabling clinicians to perform variant analysis and prioritisation.",
-      "Ensure compliance with data-protection (GDPR), access-control, and documentation requirements across the hospital's clinical governance framework and the university's research environment.",
+      "Ensure compliance with data-protection, access-control, and documentation requirements across the hospital's clinical governance framework and the university's research environment.",
     ],
   },
   {
@@ -38,9 +38,9 @@ const timelineData = [
     period: "Jan 2023 - Aug 2025",
     duties: [
       "Designed and implemented workflows for the research group's Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud. This included a WDL-based workflow for variant calling and annotation using PacBio HiFi long-read sequencing data, and a machine learning workflow for biomarker discovery.",
-      "Led the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
+      "Led the processing and analysis of 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
       "Provided bioinformatics support to IMCM research teams, devising new analysis strategies and working closely with the bioinformatics core group.",
-      "Maintained extensive documentation of all analyses and code within IMCM's internal data platform.",
+      "Maintained documentation of analyses and code within IMCM's internal data platform.",
     ],
   },
   {
@@ -52,9 +52,13 @@ const timelineData = [
     duties: [
       "Developed a bioinformatics pipeline for automated exploration of NCBI SRA datasets, enabling efficient sequence-based searches and analysis of large-scale NGS data.",
       "Analysed publicly available RNA-seq data to understand gene expression patterns of snoRNAs, tRNAs, and tRNA-like genes.",
-      "Performed comparative genomic analyses of draft and complete genomes to identify and characterise novel tRNA-Cys gene clusters in Arabidopsis thaliana.",
+      <>
+        Performed comparative genomic analyses of draft and complete genomes to
+        identify and characterise novel tRNA-Cys gene clusters in{" "}
+        <i>Arabidopsis thaliana</i>.
+      </>,
       "Developed a snoRNA expression atlas web application, including gene annotations, expression levels, and predicted target genes.",
-      "Developed a tRNA expression database providing insights into tRNA and tRNA-like gene expression, transcript-level coverage, and structural details.",
+      "Developed a tRNA expression database covering tRNA and tRNA-like gene expression, with transcript-level coverage and structural features.",
     ],
   },
   {
@@ -64,7 +68,7 @@ const timelineData = [
     title: "Bioinformatics Analyst",
     period: "Apr 2016 - Sept 2018",
     duties: [
-      "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a research team operating within a CAP-accredited, NABL-certified diagnostic environment.",
+      "Delivered clinical WES, WGS, RNA-seq, and neo-epitope prediction projects to clinicians and clients as part of a clinical research team operating within a CAP- and NABL-accredited diagnostic environment.",
       "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
       "Automated the in-house neo-epitope prioritisation pipeline for somatic variants, integrating somatic variant calling, HLA typing, and ML-based immunogenicity scoring from tumor-normal DNA-seq and RNA-seq data.",
       "Built a web application on top of the pipeline for automated neo-epitope prioritisation, generating reports with ranked peptide candidates and their corresponding HLA allele predictions.",

@@ -12,7 +12,7 @@ const timelineData = [
       "Lead bioinformatics operations at the Core Facility Genomics and Bioinformatics, supporting multi-omics research across WGS, WES, and RNA-seq assays on Illumina and Oxford Nanopore platforms.",
       "Build and maintain in-house Nextflow workflows for short-read (Illumina) and long-read (Oxford Nanopore) data, such as allele-specific read counts with VAF estimation, and haplotype-resolved methylation profiling.",
       "Support research groups with bioinformatics input on study design, data QC, and downstream analysis planning.",
-      "Perform germline variant calling using DRAGEN and DeepVariant, and analyse RNA-seq datasets.",
+      "Perform germline variant calling using DRAGEN, GATK, and DeepVariant, and analyse RNA-seq datasets.",
       "Manage sequencing data storage and access control across projects on HPC infrastructure.",
       "Maintain project-level documentation covering code and methodology.",
     ],
@@ -26,7 +26,7 @@ const timelineData = [
     period: "Apr 2026 - Current",
     duties: [
       "Collaborate with clinical researchers on the analysis of genomic and other research datasets, and support reproducible germline variant-analysis workflows within the hospital computing environment.",
-      "Deploy and maintain the in-house clinical genomics platform, enabling clinicians to perform variant analysis and prioritisation.",
+      "Deploy and maintain the in-house clinical genomics platform (megSAP, GSvar, and ngs-bits), enabling clinicians to perform variant analysis and prioritisation.",
       "Ensure compliance with data-protection, access-control, and documentation requirements across the hospital's clinical governance framework and the university's research environment.",
     ],
   },
